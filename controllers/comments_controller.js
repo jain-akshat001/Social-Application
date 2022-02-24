@@ -32,3 +32,29 @@ module.exports.create = function(req,res){
 
     });
 }
+
+module.exports.destroy = function(req,res){
+    Comment.findById(req.params.id, function(err,comment){
+        if(err){
+            console.log('Error in finding the comment:', err);
+            return err;
+        }
+
+        if(comment.user == req.user.id){
+            let postId = comment.post;
+
+            comment.remove();
+            // Syntax for pulling the comment out of array of comments inside the post
+            Post.findByIdAndUpdate(postId, { $pull : {comments: req.params.id}}, function(err,post){
+                if(err){
+                    console.log('Error in finding the post:', err);
+                    return err;
+                }
+                return res.redirect('back');
+            });
+        }
+        else{
+            return res.redirect('back');
+        }
+    });
+}
