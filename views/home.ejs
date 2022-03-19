@@ -1,10 +1,14 @@
 
-<h1>
+<link rel="stylesheet" type="text/css" href="/css/user_profile.css">
+
+<h1 class="profile-heading">
     <%=title%> / Social
 </h1>
 
+<div id="home-container">
+
 <section id="feed-posts">
-    <h4> Posts </h4>
+    <h4 id="posts-heading"> Posts </h4>
 
     <% if(locals.user) { %>
 
@@ -26,8 +30,8 @@
 </section>
 
 <section id="user-friends">
-    <h4>Friends</h4>
-    <ul>
+    <h4 id="friends-title">Friends</h4>
+    <ul id="friends-list">
         <% for(u of all_users) { %>
             <li>
                 <p>
@@ -37,3 +41,5 @@
         <% } %>
     </ul>
 </section>
+</div>
+<script src="/js/home_posts.js"></script>

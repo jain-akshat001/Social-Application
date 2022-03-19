@@ -1,0 +1,41 @@
+.page-header{
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+.heading{
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+.horizontal-list{
+    list-style: none;
+    margin-top: 1.2rem;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.page-footer{
+    background-color: rgba(0, 0, 0, 0.623);
+    padding:0.5px 0px 0.5px 0px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /* position: fixed; */
+}
+

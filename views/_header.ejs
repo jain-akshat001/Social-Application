@@ -1,7 +1,11 @@
-<header>
-    Page Header
+<!-- <link rel="stylesheet" type="text/css" href="/css/header.css"> -->
 
-    <ul>
+<header class="page-header">
+    <div class="heading">
+    <h1> NoobieHacker </h1>
+    </div>
+    <div class="list">
+    <ul class="horizontal-list">
         <% if(locals.user){%>
         <li> <%= user.name %> </li>    
         <li>
@@ -16,5 +20,5 @@
             </li>
         <%} %>
     </ul>
-
+</div>
 </header>
