@@ -1,41 +1,20 @@
-.page-header{
-    background-color: rgba(0, 0, 0, 0.623);
-    color: white;
+#layout-header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  background: #2196f3;
+  color: white;
+  box-shadow: 1px 1px 1px 1px lightgrey; }
+  #layout-header nav .mini-logo p {
+    margin: 5px;
+    font-size: 1.4rem;
+    font-weight: bold; }
+  #layout-header nav .auth-links ul {
+    margin: 5% 5px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* position: fixed; */
-}
-
-.heading{
-    margin-left: 20px;
-    font-family: sans-serif;
-}
-
-.horizontal-list{
-    list-style: none;
-    margin-top: 1.2rem;
-}
-
-.horizontal-list li {
-    display: inline-block;
-    margin-right: 20px;
+    list-style: none; }
+    #layout-header nav .auth-links ul li {
+      margin-right: 10px; }
+  #layout-header nav a {
     color: white;
-    font-size: 1.5rem;
-}
-
-.horizontal-list li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-
-.page-footer{
-    background-color: rgba(0, 0, 0, 0.623);
-    padding:0.5px 0px 0.5px 0px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    /* position: fixed; */
-}
-
+    text-decoration: none; }
